@@ -35,6 +35,6 @@ steps:
     configuration: '$(buildConfiguration)'
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'Pay-As-You-Go'
+    azureSubscription: '938bc6ac-ff55-4509-bf9d-6fa8f68379e4'
     appName: '<demotwo'
     package: $(System.DefaultWorkingDirectory)/**/*.zip
