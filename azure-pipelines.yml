@@ -33,10 +33,11 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
-- task: AzureRmWebAppDeployment@4
-  displayName: 'Azure App Service Deploy: demotwo'
+
+
+- task: IISWebAppDeploymentOnMachineGroup@0
+  displayName: 'Deploy IIS Website/App: '
   inputs:
-    azureSubscription: 'Pay-As-You-Go(938bc6ac-ff55-4509-bf9d-6fa8f68379e4)'
-    WebAppName: demotwo
+    WebSiteName: demotwo
 
 - task: PublishBuildArtifacts@1
